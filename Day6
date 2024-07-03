@@ -14,8 +14,6 @@ original_data.head()
 
 
 # 3
-
-
 import matplotlib.pyplot as plt
 import math
 get_ipython().run_line_magic('matplotlib', 'inline')
