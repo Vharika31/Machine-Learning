@@ -1,13 +1,6 @@
-
-
-
 import pandas as pd
 import numpy as np
-
 # 2
-
-
-
 original_data =pd.read_csv(
     "adult.csv",
     names=[
