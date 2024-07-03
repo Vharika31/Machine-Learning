@@ -11,8 +11,6 @@ original_data =pd.read_csv(
     engine='python',
     na_values='?')
 original_data.head()
-
-
 # 3
 import matplotlib.pyplot as plt
 import math
