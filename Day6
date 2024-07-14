@@ -30,9 +30,6 @@ for i,column in enumerate(['Age','Workclass','Education','Occupation','Race','Ge
         plt.xticks(rotation='vertical')
 plt.subplots_adjust(hspace=0.7, wspace=0.2)
 plt.show()
-
-
-
 # 4
 
 import sklearn.preprocessing as preprocessing
