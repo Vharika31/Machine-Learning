@@ -31,7 +31,6 @@ for i,column in enumerate(['Age','Workclass','Education','Occupation','Race','Ge
 plt.subplots_adjust(hspace=0.7, wspace=0.2)
 plt.show()
 # 4
-
 import sklearn.preprocessing as preprocessing
 le=preprocessing.LabelEncoder()
 original_data['Occupation']=le.fit_transform(original_data['Occupation'].astype(str))
