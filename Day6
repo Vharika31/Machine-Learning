@@ -36,17 +36,10 @@ original_data.head()
 # 5
 original_data['Target']=le.fit_transform(original_data['Target'].astype(str))
 original_data.tail()
-
-
 # 6
-
 original_data.groupby('Education-Num').Target.mean().plot(kind='bar')
 plt.show()
-
 # 7
-
-
-
 from sklearn.model_selection import train_test_split
 X=original_data[['Education-Num','Occupation']]
 Y=original_data['Target']
