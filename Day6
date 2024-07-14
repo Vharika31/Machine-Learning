@@ -15,11 +15,9 @@ original_data.head()
 import matplotlib.pyplot as plt
 import math
 get_ipython().run_line_magic('matplotlib', 'inline')
-
 fig = plt.figure(figsize=(20,20))
 cols=3
 rows=math.ceil(float(original_data.shape[1])/cols)
-
 for i,column in enumerate(['Age','Workclass','Education','Occupation','Race','Gender']):
     ax=fig.add_subplot(rows,cols,i+1)
     ax.set_title(column)
