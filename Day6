@@ -44,7 +44,6 @@ from sklearn.model_selection import train_test_split
 X=original_data[['Education-Num','Occupation']]
 Y=original_data['Target']
 X_train,x_test,Y_train,y_test=train_test_split(X,Y,test_size=0.2,random_state=0)
-
 # 8
 from sklearn.svm import SVC
 classifier=SVC()
@@ -67,11 +66,7 @@ corrmat=original_data.corr()
 f,ax=plt.subplots(figsize=(7,7))
 sns.heatmap(corrmat,vmax=.8, square=True);
 plt.show()
-
-
 # 12
-
-
 f,ax=plt.subplots(figsize=(7,7))
 sns.heatmap(corrmat,vmax=.8,square=True,annot=True,fmt='.2f')
 plt.show()
