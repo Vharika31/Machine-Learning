@@ -46,38 +46,23 @@ Y=original_data['Target']
 X_train,x_test,Y_train,y_test=train_test_split(X,Y,test_size=0.2,random_state=0)
 
 # 8
-
-
-
 from sklearn.svm import SVC
 classifier=SVC()
 classifier.fit(X_train,Y_train)
 score=classifier.score(x_test,y_test)
 print(score)
-
-
 # 9
-
-
 import seaborn as sns
 corrmat=original_data.corr()
 f,ax=plt.subplots(figsize=(7,7))
 sns.heatmap(corrmat,vmax=.8, square=True);
 plt.show()
-
-
 # 10
-
-
 original_data['Race']=le.fit_transform(original_data['Race'].astype(str))
 original_data['Gender']=le.fit_transform(original_data['Gender'].astype(str))
 original_data['Marital Status']=le.fit_transform(original_data['Marital Status'].astype(str))
 original_data['Education']=le.fit_transform(original_data['Education'].astype(str))
-
-
 # 11
-
-
 corrmat=original_data.corr()
 f,ax=plt.subplots(figsize=(7,7))
 sns.heatmap(corrmat,vmax=.8, square=True);
